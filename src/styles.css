@@ -1,0 +1,4 @@
+/* Minimal styles to make it presentable. For production use Tailwind config. */
+body { font-family: Inter, Arial, sans-serif; margin:0; }
+.container { max-width: 1100px; margin: 0 auto; padding: 16px; }
+.grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
