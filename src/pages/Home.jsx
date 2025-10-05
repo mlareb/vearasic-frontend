@@ -4,7 +4,7 @@ import axios from 'axios';
 export default function Home(){
   const [products,setProducts] = useState([]);
   useEffect(()=> {
-    axios.get(`${import.meta.env.VITE_API_URL}/api/products`)
+axios.get(`${import.meta.env.VITE_API_URL}/api/products`)
       .then(r=>setProducts(r.data))
       .catch(e=>console.error(e));
   },[]);
